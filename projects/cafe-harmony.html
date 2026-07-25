@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Café Harmony Performance Analysis | Shingirai Elvin Goni</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="../assets/css/design.css" />
+		<link rel="stylesheet" href="../assets/css/project.css" />
+	</head>
+	<body class="project" data-tool="excel">
+
+		<header class="project-header">
+			<div class="inner">
+				<a href="../index.html" class="back">&larr; Back to portfolio</a>
+			</div>
+		</header>
+
+		<div class="project-hero">
+			<span class="tag">Excel &middot; Operations Analysis</span>
+			<h1>Café Harmony Performance Analysis</h1>
+			<p class="dek">Diagnosing a multi-branch café chain's struggle to keep up with demand, using sales, customer, employee, stock and feedback data.</p>
+			<div class="meta-row">
+				<span>Tool: Microsoft Excel</span>
+				<span>Data: Sales, Customer, Employee, Stock, Feedback</span>
+			</div>
+		</div>
+
+		<article class="project-body">
+
+			<h2>Background</h2>
+			<div class="axis-rule"></div>
+			<p>Café Harmony is a café chain specialising in drinks, snacks and light meals. It has grown rapidly since its establishment, but it is now struggling to meet demand across its city-wide branches. The investigation drew on five datasets: sales transactions across locations, customer demographics and preferences, employee records, stock and inventory levels, and customer feedback ratings.</p>
+
+			<h2>Total Sales Trend</h2>
+			<div class="axis-rule"></div>
+			<figure class="dashboard">
+				<img src="../images/projects/cafe-harmony-sales-trend.png" alt="Café Harmony total sales trend chart by month" />
+				<figcaption>Monthly total sales trend, Jan&ndash;Dec</figcaption>
+			</figure>
+			<p>Sales fluctuated across the first three quarters of the year before dropping off. Two factors stood out: seasonality (coffee sells better in winter, cold drinks in summer) and supply availability &mdash; when raw materials run short, sales suffer regardless of demand.</p>
+
+			<h2>Revenue by Product</h2>
+			<div class="axis-rule"></div>
+			<figure class="dashboard">
+				<img src="../images/projects/cafe-harmony-revenue-by-product.png" alt="Revenue by product chart" />
+				<figcaption>Total revenue contribution by product</figcaption>
+			</figure>
+			<p>Muffins are the top revenue contributor, but that alone doesn't solve the demand problem &mdash; sustaining that revenue requires a constant, reliable supply. Croissants contribute the least revenue; that isn't necessarily a preference issue, since supply-side factors could equally be responsible and need separate investigation.</p>
+
+			<h2>Stock Management</h2>
+			<div class="axis-rule"></div>
+			<figure class="dashboard">
+				<img src="../images/projects/cafe-harmony-stock.png" alt="Stock performance chart showing shortfalls by ingredient" />
+				<figcaption>Stock performance: available vs. required inventory</figcaption>
+			</figure>
+			<p>Stock performance measures the gap between available and required inventory. Most ingredients sit below the required level &mdash; croissant dough and iced tea bags are each 74 units short, milk is 79 short, and muffin mix is 66 short. Even the best-stocked item, sandwich bread, isn't comfortably ahead. These shortfalls directly constrain sales.</p>
+
+			<h2>Location Performance</h2>
+			<div class="axis-rule"></div>
+			<figure class="dashboard">
+				<img src="../images/projects/cafe-harmony-locations.png" alt="Revenue by location chart" />
+				<figcaption>Revenue by location: Airport, Downtown, Suburbs, Uptown</figcaption>
+			</figure>
+			<p>Uptown is the strongest location, but relying on one branch to offset weaker ones isn't sustainable &mdash; it risks exhausting that location's own capacity. Airport is the weakest contributor and a drag on total sales.</p>
+
+			<h2>Employee Performance</h2>
+			<div class="axis-rule"></div>
+			<figure class="dashboard">
+				<img src="../images/projects/cafe-harmony-employee-performance.png" alt="Below-average employee performance chart" />
+				<figcaption>Below-average employees by performance sum vs. average sales target</figcaption>
+			</figure>
+			<p>Performance varies notably by location, likely linked to gaps in customer-service or on-the-job training that slow down service. The chart highlights the employees furthest below target, since they have the most negative pull on total sales.</p>
+
+			<h2>Age Groups</h2>
+			<div class="axis-rule"></div>
+			<figure class="dashboard">
+				<img src="../images/projects/cafe-harmony-age-groups.png" alt="Profit by age range donut chart" />
+				<figcaption>Profit share by customer age group</figcaption>
+			</figure>
+			<p>Grouping transactions by customer age (using Excel's IFS function) shows youth and adult customers contributing almost equally, with older customers contributing noticeably less &mdash; likely because the current menu skews toward what the two younger groups prefer.</p>
+
+			<h2>Recommendations</h2>
+			<div class="axis-rule"></div>
+			<ol>
+				<li>Grow sales of the least-purchased product by improving or diversifying it to win over customers who currently skip it.</li>
+				<li>Improve stock management so required raw materials stay available &mdash; including sourcing alternate suppliers and running regular stock takes to avoid shortages.</li>
+				<li>Investigate the bottlenecks behind under-performing locations, and rotate staff from strong-performing branches to help close the gap.</li>
+				<li>Introduce on-the-job training for lower-performing employees, alongside incentives and rewards for strong or improving performance.</li>
+				<li>Maintain or improve supply of the products favoured by youth and adult customers, while checking whether older customers are being underserved by current product choices.</li>
+			</ol>
+
+		</article>
+
+		<footer class="project-footer">
+			<a href="../index.html">&larr; Back to all projects</a>
+		</footer>
+
+	</body>
+</html>
